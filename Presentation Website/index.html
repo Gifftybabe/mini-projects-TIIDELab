@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cadf8a9c51.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Presentation</title>
+</head>
+<body>
+    <!-- Page 1 (Intro) -->
+    <section id="page-1" class="page">
+        <h1>Welcome To My Presentaion</h1>
+        <p>Ladies and gentlemen, esteemed guests, and fellow tech enthusiasts, thank you for joining us today as we embark on an exciting journey into the world of "Tech Careers and Skills." I am thrilled to be here, standing before you as we delve into the dynamic and ever-evolving landscape of technology and the vast opportunities it presents.</p>
+        <div>
+            <a href="#page-2" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </section>
+
+        <!-- Page 2  -->
+        <section id="page-2" class="page">
+            <h1>Brief Introduction</h1>
+            <p>In this digital era, technology has become an integral part of our daily lives, shaping industries, economies, and societies worldwide. As we witness this technological revolution, the demand for skilled professionals in the tech industry continues to soar, offering a multitude of captivating career paths and possibilities.</p>
+            <div>
+                <a href="#page-1" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                <a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+            </div>
+        </section>
+
+        <section id="page-3" class="page">
+            <h1>Exploring Careers and Skills</h1>
+            <p>The tech industry offers a vast array of exciting career opportunities, each contributing uniquely to the digital revolution. <br>
+
+                Tech careers span diverse domains, from software development, data analysis, and cybersecurity to UX/UI design, cloud computing, and more. <br>
+                the importance of passion and interest in choosing a tech careercannot be overemphasized, aligning personal strengths with the right role. <br>
+            </p>
+            <div>
+                <a href="#page-2" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+                <a href="#page-4" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+            </div>
+        </section>
+
+        <section id="page-4" class="page">
+            <h1>Essential Skills in the Tech</h1>
+            <p>
+
+                Adaptability: The ability to quickly learn and adapt to new technologies and tools is crucial. Tech professionals must embrace change and stay agile in the face of rapid advancements. <br>
+
+                Problem-Solving: Tech environments are rife with challenges. Problem-solving skills are vital for effectively identifying issues and devising innovative solutions. <br>
+
+                Critical Thinking: Analytical thinking enables professionals to assess complex situations, make informed decisions, and approach tasks with a strategic mindset.
+            </p>
+            <div>
+                <a href="#page-2" class="btn">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+        <script>
+            //Smooth Scrolling
+            $('.btn').on('click', function(event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+                    const hash = this.hash;
+                    $('html, body').animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800
+                    );
+                }
+            });
+        </script>
+</body>
+</html>
